@@ -3,7 +3,7 @@ import Teste from "../form/Teste"
 import LInput from "../form/LInput"
 import Selected from "../form/Selected"
 import SubmitButton from "../form/SubmitButton"
-function ProjectForm() {
+function ProjectForm({ btnText }) {
     return (
         <form className={styles.form}>
 
@@ -22,7 +22,7 @@ function ProjectForm() {
             />
 
             <Selected name="category_id" text="Selecione a categoria" />
-            <SubmitButton text="Criar Projeto" />
+            <SubmitButton text={btnText} />
 
         </form>
     )
